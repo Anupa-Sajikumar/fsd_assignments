@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Personality Development Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2c3e50;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: white;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        /* Section Styling */
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        form input:focus, form textarea:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+
+        form input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #f39c12;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            section {
+                padding: 10px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="goals.html">Goals</a></li>
+                <li><a href="habit-tracker.html">Habit Tracker</a></li>
+                <li><a href="weekly-summary.html">Weekly Summary</a></li>
+                <li><a href="milestones.html">Milestones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Get in Touch</h2>
+        <p>If you have any questions, feel free to reach out!</p>
+        <p><strong>Email:</strong> personaldevelopment@gmail.com</p>
+        <p><strong>Phone:</strong> (+91) 6723458123</p>
+        
+        <form onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required minlength="2">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+            
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Personality Development Tracker</p>
+        <p><strong>Contact:</strong> personaldevelopment@example.com | (+91) 9278561239</p>
+        <div class="social-icons">
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter">&#x1F426;</a>
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">&#x1F4F1;</a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">&#x1F47E;</a>
+        </div>
+    </footer>
+
+    <script>
+        // Simple form validation for required fields
+        function validateForm() {
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            if (!name || !email || !message) {
+                alert("Please fill in all the fields.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

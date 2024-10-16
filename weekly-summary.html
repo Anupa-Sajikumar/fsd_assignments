@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Summary - Personality Development Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f7;
+            color: #2c3e50;
+        }
+
+        header {
+            background-color: #34495e;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #3498db;
+            border-radius: 5px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #34495e;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .progress {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .progress-item {
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #3498db;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .progress-item strong {
+            margin-left: 10px;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 5px 0;
+            }
+
+            section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Weekly Progress Summary</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="goals.html">Goals</a></li>
+                <li><a href="habit-tracker.html">Habit Tracker</a></li>
+                <li><a href="milestones.html">Milestones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Your Progress</h2>
+        <div class="progress">
+            <div class="progress-item">
+                <span>Exercise:</span>
+                <strong>Completed 5 out of 7 days</strong>
+            </div>
+            <div class="progress-item">
+                <span>Reading Goal:</span>
+                <strong>Achieved 6 out of 7 days</strong>
+            </div>
+            <div class="progress-item">
+                <span>Journaling Goal:</span>
+                <strong>Achieved 7 out of 7 days</strong>
+            </div>
+        </div>
+        <p><strong>Great Job!!! Keep It Up!</strong></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Personality Development Tracker</p>
+    </footer>
+</body>
+</html>

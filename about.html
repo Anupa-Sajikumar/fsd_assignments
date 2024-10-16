@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Personality Development Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Responsive Navigation */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            background-color: #2c3e50;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #3498db;
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        /* Header Animation */
+        header h1 {
+            font-size: 2.5rem;
+            color: #34495e;
+            text-align: center;
+            animation: slideIn 1s ease-out;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Footer Animation */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            section {
+                padding: 10px;
+            }
+        }
+
+        /* Social Media Icons in Footer */
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #ecf0f1;
+            font-size: 1.5rem;
+        }
+
+        .social-icons a:hover {
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About the Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="goals.html">Goals</a></li>
+                <li><a href="habit-tracker.html">Habit Tracker</a></li>
+                <li><a href="weekly-summary.html">Weekly Summary</a></li>
+                <li><a href="milestones.html">Milestones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h3>About the Tracker</h3>
+        <p>A Personality Development Tracker is a systematic tool designed to help individuals monitor and enhance their personal growth over time.</p>
+        <p>This tracker is designed to help users set goals, track their habits, and monitor their personal development progress over time. By setting clear goals and consistently tracking habits, you can achieve meaningful milestones.</p>
+        <p>Created by a team of personal development enthusiasts, this tracker aims to motivate you to stay on top of your personal growth journey.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Personality Development Tracker</p>
+        <div class="social-icons">
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter">&#x1F426;</a>
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">&#x1F4F1;</a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">&#x1F47E;</a>
+        </div>
+    </footer>
+</body>
+</html>

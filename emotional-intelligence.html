@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotional Intelligence - Personality Development Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2c3e50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: #333;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #3498db;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #34495e;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+
+        /* Input Styles */
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+
+        /* Image Styles */
+        img {
+            width: 300px;
+            float: left;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            clear: both;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            img {
+                width: 100%;
+                float: none;
+                margin: 10px 0;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Emotional Intelligence</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="goals.html">Goals</a></li>
+                <li><a href="habit-tracker.html">Habit Tracker</a></li>
+                <li><a href="time-management.html">Time Management</a></li>
+                <li><a href="milestones.html">Milestones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Understanding Emotional Intelligence</h2>
+        <p>Emotional intelligence (EQ) is the ability to understand, manage, and utilize your emotions in positive ways to communicate effectively, empathize with others, overcome challenges, and defuse conflicts.</p>
+
+        <!-- Table outlining key components of Emotional Intelligence -->
+        <table>
+            <tr>
+                <th>Component</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td>Self-Awareness</td>
+                <td>Recognizing your own emotions and their impact</td>
+                <td>Understanding when you're feeling stressed</td>
+            </tr>
+            <tr>
+                <td>Self-Regulation</td>
+                <td>Controlling impulsive feelings and behaviors</td>
+                <td>Pausing before reacting in anger</td>
+            </tr>
+            <tr>
+                <td>Empathy</td>
+                <td>Understanding the emotions of others</td>
+                <td>Listening to someone’s concerns without judgment</td>
+            </tr>
+            <tr>
+                <td>Social Skills</td>
+                <td>Managing relationships to move them in a positive direction</td>
+                <td>Collaborating effectively with a team</td>
+            </tr>
+        </table>
+
+        <!-- An interactive section with hover effect -->
+        <p><a href="https://www.verywellmind.com/what-is-empathy-2795562" target="_blank" style="color: #3498db;">Learn more about empathy here</a>.</p>
+
+        <!-- Input to demonstrate focus and hover effects -->
+        <label for="emotions-check">How are you feeling today?</label><br>
+        <input type="text" id="emotions-check" placeholder="Describe your emotions">
+    </section>
+
+    <!-- An example of floating image with text wrap -->
+    <img src="images.png" alt="Emotional Intelligence" aria-describedby="imageDesc">
+    <p id="imageDesc" style="display: none;">An illustration representing emotional intelligence.</p>
+
+    <footer>
+        <p>&copy; 2024 Personality Development Tracker</p>
+    </footer>
+</body>
+</html>

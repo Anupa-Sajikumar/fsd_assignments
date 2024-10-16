@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personify : Personality Development Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f7;
+            color: #2c3e50;
+        }
+
+        header {
+            background-color: #34495e;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #3498db;
+            border-radius: 5px;
+        }
+
+        .welcome-section {
+            background-color: #ecf0f1;
+            padding: 40px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        h1 {
+            color: #bcc5ce;
+            margin: 0;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        p {
+            margin: 10px 0 20px;
+            line-height: 1.5;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 5px 0;
+            }
+
+            .welcome-section {
+                padding: 20px;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                max-width: 400px; /* Limit maximum width */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Personality Development Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="goals.html">Goals</a></li>
+                <li><a href="habit-tracker.html">Habit Tracker</a></li>
+                <li><a href="time-management.html">Time Management Skills</a></li>
+                <li><a href="emotional-intelligence.html">Emotional Intelligence</a></li>
+                <li><a href="weekly-summary.html">Weekly Summary</a></li>
+                <li><a href="milestones.html">Milestones</a></li>
+                <li><a href="success.html">Success Stories</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="quotes.html">Quotes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="welcome-section">
+        <img src="logo_home.jpg" alt="Profile Image" style="width: 100%; height: auto; max-width: 400px;">
+        <h2>Track Your Growth, One Step at a Time</h2>
+        <p>Set goals, track habits, and monitor your progress with this tracker.</p>
+        <button onclick="location.href='goals.html'">Get Started</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Personify: Personality Development Tracker</p>
+    </footer>
+</body>
+</html>
